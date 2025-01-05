@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.dashboard-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.dashboard-page-right {
+    width: 100%;
+}
+
+.dashboard-content-container {
+    padding: 20px;
+}
+
+.dashboard-information {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.dashboard-row {
+    display: flex;
+    gap: 30px;
+}
+
+.dashboard-card {
+    width: 50%;
+    height: 200px;
+    padding: 20px;
+}
+
+.red-card {
+    background-color: #dc3545;
+}
+
+.blue-card {
+    background-color: #17a2b8;
+}
+
+.yellow-card {
+    background-color: #ffc107;
+}
+
+.green-card {
+    background-color: #28a745;
+}

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25%;
+    height: 100%;
+    background-color: #272c33;
+    padding: 30px;
+}
+
+.sidebar-container h1{
+    color: white;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link-element{
+    color: white;
+    cursor: pointer;
+}
+
+.link-subelement{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.hidden-link{
+    display: none;
+}

@@ -1,6 +1,7 @@
 <!-- Login page -->
 <?php
-
+include("./admin/includes/config.php");
+include("./admin/includes/database.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
