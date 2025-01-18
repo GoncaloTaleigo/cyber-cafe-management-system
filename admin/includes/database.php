@@ -9,18 +9,16 @@ class Database{
          $this->connection=new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
          if($this->connection->connect_errno){
             echo "this connection failed";
-         }else{
-            echo "we are connected";
          }
         
     }
 
     function query($sql){
-        $queryResult=$this->connection->query($sql);
-
-        return $queryResult;
+      return $this->connection->query($sql);
 
     }
+
+
 }
 
 

@@ -5,13 +5,13 @@
 
     <div class="links">
         <div class="link-element">
-            <a href="../dashboard.php">Dashboard</a>
+            <a href="./dashboard.php">Dashboard</a>
         </div>
         <div class="link-element">
             <p>Computer</p>
             <div class="link-subelement ">
-                <a href="">Add Computer</a>
-                <a href="">Manage Computer</a>
+                <a href="./addComputer.php">Add Computer</a>
+                <a href="./manageComputer.php">Manage Computer</a>
             </div>
         </div>
         <div class="link-element ">

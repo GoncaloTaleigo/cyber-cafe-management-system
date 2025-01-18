@@ -1,10 +1,15 @@
 
 @import "dashboard.css";
 @import "sidebar.css";
+@import "login.css";
+@import "computerPage.css";
 
 
-
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .top-bar {
     background-color: white;
