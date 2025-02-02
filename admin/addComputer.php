@@ -6,7 +6,7 @@ $computer = new Computer;
 if (isset($_POST["submit"])) {
     $computer->name = $_POST["name"];
     $computer->location = $_POST["location"];
-    $computer->ip = $_POST["ipAdress"];
+    $computer->ipAdress = $_POST["ipAdress"];
 
     $computer->addComputer();
     header("Location:addComputer.php");

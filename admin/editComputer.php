@@ -2,14 +2,14 @@
 include("./includes/init.php");
 
 $computer = Computer::getComputerById($_GET["id"]);
-print_r($computer);
 
 if (isset($_POST["submit"])) {
-    $name = $_POST["name"];
-    $location = $_POST["location"];
-    $ip = $_POST["ipAdress"];
+    $computer->name=$_POST["name"];
+    $computer->location=$_POST["location"];
+    $computer->ipAdress=$_POST["ipAdress"];
+    
 
-    Computer::updateComputerValues($_GET["id"],$name,$location,$ip);
+    Computer::updateComputerValues($_GET["id"],$computer->name,$computer->location,$computer->ipAdress);
   
     echo "atualizado";
 }
@@ -38,11 +38,11 @@ if (isset($_POST["submit"])) {
             <div class="form-container">
                 <form action="" method="post" class="add-computer-form">
                     <label for="">Computer Name</label>
-                    <input type="text" name="name" value="<?php echo $computer["name"]?>">
+                    <input type="text" name="name" value="<?php echo $computer->name?>">
                     <label for="">Computer location</label>
-                    <input type="text" name="location" value="<?php echo $computer["location"]?>">
+                    <input type="text" name="location" value="<?php echo $computer->location?>">
                     <label for="">IP adress</label>
-                    <input type="text" name="ipAdress" value="<?php echo $computer["ip_adress"]?>">
+                    <input type="text" name="ipAdress" value="<?php echo $computer->ipAdress?>">
                     <input type="submit" value="Update" name="submit">
                 </form>
             </div>
