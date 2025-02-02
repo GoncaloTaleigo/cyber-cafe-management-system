@@ -17,7 +17,7 @@
         <div class="link-element ">
             <p>Users</p>
             <div class="link-subelement">
-                <a href="">Add User</a>
+                <a href="./addUser.php">Add User</a>
                 <a href="">Manage New Users</a>
                 <a href="">View Old Users</a>
             </div>
